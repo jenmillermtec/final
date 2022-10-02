@@ -1,0 +1,135 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#post {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 80vw;
+    height: 100px;
+}
+
+#post .author {
+    font-size: medium;
+    padding: 3px;
+}
+
+#post .post-text {
+    font-size: xx-large;
+    padding: 5px 10px;
+}
+
+#comments {
+    width: 80vw;
+    margin: 100px 0 0;
+    padding-top: 20px;
+    min-height: calc(100vh - 100px);
+    background-color: #eeeeee;
+}
+
+#comment-form {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+input {
+    height: 25px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+#comment-form input {
+    margin: 15px;
+}
+
+#comment-form input#author-input {
+    flex-basis: 20%;
+}
+
+#comment-form input#comment-input {
+    flex-basis: 60%;
+}
+
+#comment-form #submit-comment-form {
+    flex-basis: 10%;
+    margin: 18px;
+}
+
+#comments .comment {
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 20px 20px;
+}
+
+#comments .comment .comment-icon {
+    flex-basis: 10%;
+    padding: 10px;
+}
+
+#comments .comment .comment-content {
+    flex-basis: 80%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#comments .comment .comment-author {
+    flex-basis: 50%;
+    padding: 10px 0;
+}
+
+#comments .comment .comment-controls {
+    flex-basis: 50%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+#comments .comment .comment-controls div {
+    margin-right: 20px;
+}
+
+#comments .comment .comment-text {
+    width: 100%;
+    font-size: x-large;
+}
+
+#comments .comment .comment-edit-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+#comments .comment .comment-edit-form .edit-input {
+    flex-basis: 80%;
+}
+
+#comments .comment .comment-edit-form .edit-submit {
+    margin: 5px 10px;
+    flex-basis: 10%;
+}
+
+.button {
+    color: #c2e2eb;
+}
